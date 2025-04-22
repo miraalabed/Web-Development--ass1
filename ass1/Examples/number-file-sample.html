@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Input Form</title>
+</head>
+<body>
+
+    <h2>Form with File Upload, Image Button, Number, and Range</h2>
+
+    <form action="/submit_form" method="post" enctype="multipart/form-data">
+        
+        <label for="fileUpload">Upload File:</label><br>
+        <input type="file" id="fileUpload" name="fileUpload" required><br><br>
+        
+        <label for="age">Enter Your Age:</label><br>
+        <input type="number" id="age" name="age" min="0" max="100" required><br><br>
+
+        <label for="volume">Select Volume Level:</label><br>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="1"><br><br>
+        
+        <label for="imageButton">Submit with Image:</label><br>
+        <input type="image" id="imageButton" src="https://via.placeholder.com/100" alt="Submit" width="100" height="100"><br><br>
+
+        <input type="reset" value="Cancel">
+    </form>
+
+</body>
+</html>

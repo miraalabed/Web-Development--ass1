@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Validations</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="/submit_form" method="post">
+        
+        <!-- Name Field - Required and Max Length -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required maxlength="50" placeholder="Enter your full name"><br><br>
+
+        <!-- Email Field - Required and Valid Email Format -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required placeholder="example@domain.com"><br><br>
+
+        <!-- Phone Field - Required and Pattern Matching for Format -->
+        <label for="phone">Phone Number (10 digits):</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="1234567890"><br><br>
+
+        <!-- Password Field - Required with Minimum and Maximum Lengths -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required minlength="8" maxlength="20" placeholder="8-20 characters"><br><br>
+
+        <!-- Age Field - Number with Min and Max Values -->
+        <label for="age">Age (18-100):</label><br>
+        <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+
+        <!-- Range Slider with Min, Max, and Step -->
+        <label for="satisfaction">Satisfaction Level (1-10):</label><br>
+        <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1"><br><br>
+
+        <!-- File Upload - Required -->
+        <label for="profilePic">Upload Profile Picture:</label><br>
+        <input type="file" id="profilePic" name="profilePic" required><br><br>
+
+        <!-- Submit Button and Reset Button -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Cancel">
+
+    </form>
+
+</body>
+</html>

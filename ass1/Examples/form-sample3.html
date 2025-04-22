@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+
+    <h2>Sample Form</h2>
+
+    <form action="/submit_form" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="favoriteColor">Favorite Color:</label><br>
+            <input type="color" id="favoriteColor" name="favoriteColor"><br><br>
+
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Form Actions</legend>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+        </fieldset>
+        
+    </form>
+
+</body>
+</html>
